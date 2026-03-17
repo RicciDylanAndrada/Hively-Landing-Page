@@ -270,15 +270,15 @@ export default function Hero() {
                   color: "#0F172A",
                 }}
               >
-                Run your service business from one dashboard.
+                The booking platform built for mobile cart vendors.
               </h1>
 
               <p
                 className="text-[20px] leading-[1.5] max-w-3xl mx-auto"
                 style={{ color: "rgba(15,23,42,0.72)" }}
               >
-                Hively is built for service-based businesses that manage
-                bookings, clients, payments, automations, and schedules.
+                Capture leads from Instagram DMs, send beautiful quotes, and
+                give your clients their own dashboard to track everything.
               </p>
             </div>
 
@@ -292,7 +292,7 @@ export default function Hero() {
                   fontSize: "16px",
                 }}
               >
-                Start Your Hive
+                Start Free
               </button>
               <button
                 className="px-8 py-4 rounded-lg transition-all hover:opacity-70"
@@ -304,7 +304,7 @@ export default function Hero() {
                   fontSize: "16px",
                 }}
               >
-                View Demo
+                See How It Works
               </button>
             </div>
           </div>

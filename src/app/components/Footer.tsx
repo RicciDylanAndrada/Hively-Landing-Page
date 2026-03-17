@@ -13,14 +13,13 @@ export default function Footer() {
                   color: "#FFFFFF",
                 }}
               >
-                Ready to organize your operations?
+                Ready to book more events?
               </h2>
               <p
                 className="text-[20px] leading-[1.5]"
                 style={{ color: "rgba(255,255,255,0.72)" }}
               >
-                Join service businesses running their entire workflow through
-                Hively.
+                Join mobile cart vendors who never lose another Instagram lead.
               </p>
               <button
                 className="px-8 py-4 rounded-lg transition-all hover:opacity-90 mt-4"
@@ -31,7 +30,7 @@ export default function Footer() {
                   fontSize: "16px",
                 }}
               >
-                Start Your Hive
+                Start Free
               </button>
             </div>
 
@@ -67,14 +66,7 @@ export default function Footer() {
                   className="text-[16px] leading-[1.5]"
                   style={{ color: "rgba(255,255,255,0.72)" }}
                 >
-                  The business operating system for service-based teams.
-                </p>
-                <p
-                  className="text-[14px]"
-                  style={{ color: "rgba(255,255,255,0.48)" }}
-                >
-                  Hively is not designed for collecting PII or securing highly
-                  sensitive data.
+                  The booking platform for mobile cart vendors.
                 </p>
               </div>
             </div>
@@ -89,7 +81,7 @@ export default function Footer() {
               className="text-[14px]"
               style={{ color: "rgba(255,255,255,0.48)" }}
             >
-              © 2025 Hively. All rights reserved.
+              © 2026 Hively. All rights reserved.
             </p>
 
             <div className="flex gap-6">

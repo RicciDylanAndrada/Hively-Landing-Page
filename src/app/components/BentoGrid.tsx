@@ -1,5 +1,3 @@
-const dashboardImage = "/assets/dashboard.png";
-
 export default function BentoGrid() {
   return (
     <section className="overflow-hidden" style={{ backgroundColor: "#FAFAFA" }}>
@@ -13,20 +11,19 @@ export default function BentoGrid() {
                 color: "#0F172A",
               }}
             >
-              Everything you need to grow.
+              Everything you need to book more events.
             </h2>
             <p
               className="text-[20px] leading-[1.5] max-w-2xl mx-auto"
               style={{ color: "rgba(15,23,42,0.6)" }}
             >
-              A complete operating system designed to simplify your service
-              business.
+              Built specifically for mobile cart vendors who live on Instagram.
             </p>
           </div>
 
           {/* Bento Grid Layout */}
           <div className="grid md:grid-cols-2 gap-6 mb-6">
-            {/* Top Left - Project Workflow Card */}
+            {/* Top Left - Instagram DM Inbox */}
             <div
               className="rounded-3xl p-8 space-y-6"
               style={{
@@ -35,155 +32,102 @@ export default function BentoGrid() {
                 border: "1px solid rgba(0,0,0,0.06)",
               }}
             >
-              {/* Mock Kanban Board */}
-              <div className="space-y-4">
-                <div className="flex items-center gap-2 mb-6">
+              {/* Mock Instagram Inbox */}
+              <div className="space-y-3">
+                <div className="flex items-center gap-2 mb-4">
                   <div
                     className="px-3 py-1 rounded-md text-sm"
                     style={{
-                      backgroundColor: "#D1FAE5",
-                      color: "#065F46",
+                      backgroundColor: "#E0E7FF",
+                      color: "#3730A3",
                       fontWeight: 600,
                     }}
                   >
-                    Active Projects
+                    Instagram Inbox
                   </div>
                   <div
-                    className="px-3 py-1 rounded-md text-sm"
-                    style={{ color: "#64748B" }}
+                    className="px-2 py-0.5 rounded-full text-xs"
+                    style={{ backgroundColor: "#EF4444", color: "white", fontWeight: 600 }}
                   >
-                    Archived
-                  </div>
-                  <div className="ml-auto flex -space-x-2">
-                    <div
-                      className="w-8 h-8 rounded-full"
-                      style={{ backgroundColor: "#8B5CF6" }}
-                    />
-                    <div
-                      className="w-8 h-8 rounded-full"
-                      style={{ backgroundColor: "#3B82F6" }}
-                    />
-                    <div
-                      className="w-8 h-8 rounded-full border-2 border-white flex items-center justify-center text-xs"
-                      style={{ backgroundColor: "#E2E8F0", color: "#64748B" }}
-                    >
-                      +3
-                    </div>
+                    3 new
                   </div>
                 </div>
 
-                <div className="grid grid-cols-3 gap-4">
-                  <div>
-                    <div
-                      className="text-xs mb-2"
-                      style={{ color: "#64748B", fontWeight: 600 }}
-                    >
-                      TO DO
-                    </div>
-                    <div className="space-y-2">
-                      <div
-                        className="h-2 rounded"
-                        style={{ backgroundColor: "#DDD6FE", width: "80%" }}
-                      />
-                      <div
-                        className="h-2 rounded"
-                        style={{ backgroundColor: "#E0E7FF", width: "100%" }}
-                      />
-                    </div>
-                  </div>
-                  <div>
-                    <div
-                      className="text-xs mb-2"
-                      style={{ color: "#64748B", fontWeight: 600 }}
-                    >
-                      IN PROGRESS
-                    </div>
-                    <div className="space-y-2">
-                      <div
-                        className="h-2 rounded"
-                        style={{ backgroundColor: "#BBF7D0", width: "90%" }}
-                      />
-                      <div
-                        className="h-2 rounded"
-                        style={{ backgroundColor: "#BBF7D0", width: "70%" }}
-                      />
-                    </div>
-                  </div>
-                  <div>
-                    <div
-                      className="text-xs mb-2"
-                      style={{ color: "#CBD5E1", fontWeight: 600 }}
-                    >
-                      REVIEW
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div>
-                <h3
-                  className="text-[20px] tracking-tight"
-                  style={{
-                    fontWeight: 600,
-                    color: "#0F172A",
-                  }}
-                >
-                  Visualize your entire workflow in one place.
-                </h3>
-              </div>
-            </div>
-
-            {/* Top Right - Smart Scheduling Card */}
-            <div
-              className="rounded-3xl p-8 space-y-6"
-              style={{
-                backgroundColor: "#FFFFFF",
-                boxShadow: "0 2px 12px rgba(0,0,0,0.06)",
-                border: "1px solid rgba(0,0,0,0.06)",
-              }}
-            >
-              {/* Mock Calendar */}
-              <div className="space-y-4">
-                <div className="flex justify-between items-center mb-4">
-                  <span
-                    className="text-sm"
-                    style={{ color: "#64748B", fontWeight: 600 }}
-                  >
-                    October
-                  </span>
-                  <span className="text-sm" style={{ color: "#64748B" }}>
-                    ›
-                  </span>
-                </div>
-                <div className="grid grid-cols-7 gap-2 text-xs text-center">
-                  <div style={{ color: "#94A3B8" }}>S</div>
-                  <div style={{ color: "#94A3B8" }}>M</div>
-                  <div style={{ color: "#94A3B8" }}>T</div>
-                  <div style={{ color: "#94A3B8" }}>W</div>
-                  <div style={{ color: "#94A3B8" }}>T</div>
-                  <div style={{ color: "#94A3B8" }}>F</div>
-                  <div style={{ color: "#94A3B8" }}>S</div>
-                  {[...Array(7)].map((_, i) => (
-                    <div key={i} style={{ color: "#0F172A" }}>
-                      {i + 1}
-                    </div>
-                  ))}
-                  {[8, 9].map((num) => (
-                    <div key={num} style={{ color: "#0F172A" }}>
-                      {num}
-                    </div>
-                  ))}
+                {/* Conversation List */}
+                <div className="space-y-2">
+                  {/* Active Conversation */}
                   <div
-                    className="w-6 h-6 rounded-md flex items-center justify-center text-white mx-auto"
-                    style={{ backgroundColor: "#10B981" }}
+                    className="flex items-center gap-3 p-3 rounded-xl"
+                    style={{ backgroundColor: "#F8FAFC" }}
                   >
-                    10
-                  </div>
-                  {[11, 12].map((num) => (
-                    <div key={num} style={{ color: "#0F172A" }}>
-                      {num}
+                    <div
+                      className="w-10 h-10 rounded-full flex items-center justify-center text-white text-sm"
+                      style={{ backgroundColor: "#8B5CF6", fontWeight: 600 }}
+                    >
+                      SM
                     </div>
-                  ))}
+                    <div className="flex-1 min-w-0">
+                      <div className="flex items-center justify-between">
+                        <span style={{ fontWeight: 600, color: "#0F172A", fontSize: "14px" }}>
+                          Sarah M.
+                        </span>
+                        <span style={{ color: "#94A3B8", fontSize: "12px" }}>2m</span>
+                      </div>
+                      <p
+                        className="text-sm truncate"
+                        style={{ color: "#64748B" }}
+                      >
+                        Hi! I&apos;m getting married in June...
+                      </p>
+                    </div>
+                  </div>
+
+                  {/* Other Conversations */}
+                  <div className="flex items-center gap-3 p-3 rounded-xl">
+                    <div
+                      className="w-10 h-10 rounded-full flex items-center justify-center text-white text-sm"
+                      style={{ backgroundColor: "#3B82F6", fontWeight: 600 }}
+                    >
+                      CE
+                    </div>
+                    <div className="flex-1 min-w-0">
+                      <div className="flex items-center justify-between">
+                        <span style={{ fontWeight: 600, color: "#0F172A", fontSize: "14px" }}>
+                          Corporate Events Co.
+                        </span>
+                        <span style={{ color: "#94A3B8", fontSize: "12px" }}>1h</span>
+                      </div>
+                      <p
+                        className="text-sm truncate"
+                        style={{ color: "#64748B" }}
+                      >
+                        Looking for coffee service for 200...
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="flex items-center gap-3 p-3 rounded-xl">
+                    <div
+                      className="w-10 h-10 rounded-full flex items-center justify-center text-white text-sm"
+                      style={{ backgroundColor: "#10B981", fontWeight: 600 }}
+                    >
+                      JB
+                    </div>
+                    <div className="flex-1 min-w-0">
+                      <div className="flex items-center justify-between">
+                        <span style={{ fontWeight: 600, color: "#0F172A", fontSize: "14px" }}>
+                          Jessica B.
+                        </span>
+                        <span style={{ color: "#94A3B8", fontSize: "12px" }}>3h</span>
+                      </div>
+                      <p
+                        className="text-sm truncate"
+                        style={{ color: "#64748B" }}
+                      >
+                        What&apos;s your availability for a baby shower?
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </div>
 
@@ -195,13 +139,131 @@ export default function BentoGrid() {
                     color: "#0F172A",
                   }}
                 >
-                  Smart Scheduling
+                  Instagram DM Inbox
                 </h3>
                 <p
                   className="text-[14px] leading-[1.5]"
                   style={{ color: "rgba(15,23,42,0.6)" }}
                 >
-                  Clients book slots that actually fit your life.
+                  Never lose a lead. See every DM conversation in one place and reply without leaving Hively.
+                </p>
+              </div>
+            </div>
+
+            {/* Top Right - Client Dashboard Preview */}
+            <div
+              className="rounded-3xl p-8 space-y-6"
+              style={{
+                backgroundColor: "#FFFFFF",
+                boxShadow: "0 2px 12px rgba(0,0,0,0.06)",
+                border: "1px solid rgba(0,0,0,0.06)",
+              }}
+            >
+              {/* Mock Client Dashboard */}
+              <div className="space-y-4">
+                <div className="flex justify-between items-center mb-2">
+                  <span
+                    className="text-sm"
+                    style={{ color: "#64748B", fontWeight: 600 }}
+                  >
+                    My Vendors
+                  </span>
+                  <span
+                    className="text-xs px-2 py-1 rounded-md"
+                    style={{ backgroundColor: "#F1F5F9", color: "#64748B" }}
+                  >
+                    June 15 Wedding
+                  </span>
+                </div>
+
+                {/* Vendor Cards */}
+                <div className="space-y-2">
+                  <div
+                    className="flex items-center gap-3 p-3 rounded-xl"
+                    style={{ backgroundColor: "#F0FDF4", border: "1px solid #BBF7D0" }}
+                  >
+                    <div
+                      className="w-8 h-8 rounded-lg flex items-center justify-center"
+                      style={{ backgroundColor: "#10B981" }}
+                    >
+                      <span className="text-white text-xs">☕</span>
+                    </div>
+                    <div className="flex-1">
+                      <span style={{ fontWeight: 600, color: "#0F172A", fontSize: "13px" }}>
+                        The Roaming Barista
+                      </span>
+                    </div>
+                    <span
+                      className="text-xs px-2 py-1 rounded-md"
+                      style={{ backgroundColor: "#10B981", color: "white", fontWeight: 600 }}
+                    >
+                      Booked
+                    </span>
+                  </div>
+
+                  <div
+                    className="flex items-center gap-3 p-3 rounded-xl"
+                    style={{ backgroundColor: "#FEF3C7", border: "1px solid #FDE68A" }}
+                  >
+                    <div
+                      className="w-8 h-8 rounded-lg flex items-center justify-center"
+                      style={{ backgroundColor: "#F59E0B" }}
+                    >
+                      <span className="text-white text-xs">🍰</span>
+                    </div>
+                    <div className="flex-1">
+                      <span style={{ fontWeight: 600, color: "#0F172A", fontSize: "13px" }}>
+                        Sweet Treats Cart
+                      </span>
+                    </div>
+                    <span
+                      className="text-xs px-2 py-1 rounded-md"
+                      style={{ backgroundColor: "#F59E0B", color: "white", fontWeight: 600 }}
+                    >
+                      Quote Sent
+                    </span>
+                  </div>
+
+                  <div
+                    className="flex items-center gap-3 p-3 rounded-xl"
+                    style={{ backgroundColor: "#EDE9FE", border: "1px solid #DDD6FE" }}
+                  >
+                    <div
+                      className="w-8 h-8 rounded-lg flex items-center justify-center"
+                      style={{ backgroundColor: "#8B5CF6" }}
+                    >
+                      <span className="text-white text-xs">🌸</span>
+                    </div>
+                    <div className="flex-1">
+                      <span style={{ fontWeight: 600, color: "#0F172A", fontSize: "13px" }}>
+                        Bloom Mobile Florist
+                      </span>
+                    </div>
+                    <span
+                      className="text-xs px-2 py-1 rounded-md"
+                      style={{ backgroundColor: "#8B5CF6", color: "white", fontWeight: 600 }}
+                    >
+                      Deposit Paid
+                    </span>
+                  </div>
+                </div>
+              </div>
+
+              <div className="space-y-2">
+                <h3
+                  className="text-[20px] tracking-tight"
+                  style={{
+                    fontWeight: 600,
+                    color: "#0F172A",
+                  }}
+                >
+                  Client Dashboard
+                </h3>
+                <p
+                  className="text-[14px] leading-[1.5]"
+                  style={{ color: "rgba(15,23,42,0.6)" }}
+                >
+                  Clients see all vendors, quotes, and payments in one place.
                 </p>
               </div>
             </div>
@@ -209,7 +271,7 @@ export default function BentoGrid() {
 
           {/* Bottom Row */}
           <div className="grid md:grid-cols-3 gap-6">
-            {/* Seamless Payments Card */}
+            {/* Visual Quote Builder */}
             <div
               className="rounded-3xl p-8 space-y-6"
               style={{
@@ -218,57 +280,62 @@ export default function BentoGrid() {
                 border: "1px solid rgba(0,0,0,0.06)",
               }}
             >
-              {/* Mock Invoice */}
+              {/* Mock Quote Builder */}
               <div className="space-y-3">
                 <div
-                  className="space-y-2 pb-4 border-b"
-                  style={{ borderColor: "#F1F5F9" }}
+                  className="text-xs px-3 py-1.5 rounded-md inline-block"
+                  style={{
+                    backgroundColor: "#E6F29A",
+                    color: "#4D5A0F",
+                    fontWeight: 600,
+                  }}
                 >
-                  <div
-                    className="h-2 rounded"
-                    style={{ backgroundColor: "#F1F5F9", width: "60%" }}
-                  />
-                  <div
-                    className="h-2 rounded"
-                    style={{ backgroundColor: "#F1F5F9", width: "40%" }}
-                  />
+                  Quote Builder
                 </div>
-                <div className="flex items-center justify-between pt-2">
-                  <span
-                    className="text-[24px]"
-                    style={{ fontWeight: 700, color: "#0F172A" }}
-                  >
-                    $2,450.00
-                  </span>
-                  <div
-                    className="px-3 py-1 rounded-md text-xs"
-                    style={{
-                      backgroundColor: "#D1FAE5",
-                      color: "#065F46",
-                      fontWeight: 700,
-                    }}
-                  >
-                    PAID
+                <div className="space-y-2 mt-3">
+                  <div className="flex items-center justify-between text-sm">
+                    <div className="flex items-center gap-2">
+                      <div
+                        className="w-4 h-4 rounded border-2 flex items-center justify-center"
+                        style={{ borderColor: "#10B981", backgroundColor: "#10B981" }}
+                      >
+                        <span className="text-white text-xs">✓</span>
+                      </div>
+                      <span style={{ color: "#0F172A" }}>Espresso Bar</span>
+                    </div>
+                    <span style={{ color: "#64748B" }}>$8/person</span>
+                  </div>
+                  <div className="flex items-center justify-between text-sm">
+                    <div className="flex items-center gap-2">
+                      <div
+                        className="w-4 h-4 rounded border-2 flex items-center justify-center"
+                        style={{ borderColor: "#10B981", backgroundColor: "#10B981" }}
+                      >
+                        <span className="text-white text-xs">✓</span>
+                      </div>
+                      <span style={{ color: "#0F172A" }}>Cold Brew</span>
+                    </div>
+                    <span style={{ color: "#64748B" }}>$6/person</span>
+                  </div>
+                  <div className="flex items-center justify-between text-sm">
+                    <div className="flex items-center gap-2">
+                      <div
+                        className="w-4 h-4 rounded border-2"
+                        style={{ borderColor: "#CBD5E1" }}
+                      />
+                      <span style={{ color: "#94A3B8" }}>Pastry Add-on</span>
+                    </div>
+                    <span style={{ color: "#CBD5E1" }}>$4/person</span>
                   </div>
                 </div>
                 <div
-                  className="w-10 h-10 rounded-full flex items-center justify-center ml-auto"
-                  style={{ backgroundColor: "#D1FAE5" }}
+                  className="pt-3 mt-2 border-t flex justify-between items-center"
+                  style={{ borderColor: "#F1F5F9" }}
                 >
-                  <svg
-                    className="w-5 h-5"
-                    style={{ color: "#10B981" }}
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2.5}
-                      d="M5 13l4 4L19 7"
-                    />
-                  </svg>
+                  <span style={{ color: "#64748B", fontSize: "13px" }}>75 guests</span>
+                  <span style={{ fontWeight: 700, color: "#0F172A", fontSize: "18px" }}>
+                    $1,050
+                  </span>
                 </div>
               </div>
 
@@ -280,18 +347,18 @@ export default function BentoGrid() {
                     color: "#0F172A",
                   }}
                 >
-                  Seamless Payments
+                  Visual Quote Builder
                 </h3>
                 <p
                   className="text-[14px] leading-[1.5]"
                   style={{ color: "rgba(15,23,42,0.6)" }}
                 >
-                  Get paid 2x faster with automated invoices.
+                  Menu-based quotes that auto-calculate pricing.
                 </p>
               </div>
             </div>
 
-            {/* Automations on Autopilot Card */}
+            {/* Multi-Event Calendar */}
             <div
               className="rounded-3xl p-8 space-y-6"
               style={{
@@ -300,29 +367,67 @@ export default function BentoGrid() {
                 border: "1px solid rgba(0,0,0,0.06)",
               }}
             >
-              <div className="flex justify-center">
-                <div
-                  className="w-16 h-16 rounded-2xl flex items-center justify-center"
-                  style={{ backgroundColor: "#EDE9FE" }}
-                >
-                  <svg
-                    className="w-8 h-8"
-                    style={{ color: "#8B5CF6" }}
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
+              {/* Mock Day View Calendar */}
+              <div className="space-y-3">
+                <div className="flex justify-between items-center">
+                  <span
+                    className="text-sm"
+                    style={{ color: "#0F172A", fontWeight: 600 }}
                   >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M13 10V3L4 14h7v7l9-11h-7z"
-                    />
-                  </svg>
+                    Saturday, Oct 12
+                  </span>
+                  <span
+                    className="text-xs px-2 py-1 rounded-md"
+                    style={{ backgroundColor: "#E6F29A", color: "#4D5A0F", fontWeight: 600 }}
+                  >
+                    3 events
+                  </span>
+                </div>
+
+                {/* Event List */}
+                <div className="space-y-2">
+                  <div
+                    className="p-2.5 rounded-lg"
+                    style={{ backgroundColor: "#DBEAFE", borderLeft: "3px solid #3B82F6" }}
+                  >
+                    <div className="flex items-center justify-between">
+                      <span style={{ fontWeight: 600, color: "#1E40AF", fontSize: "12px" }}>
+                        7:00 AM
+                      </span>
+                      <span style={{ color: "#3B82F6", fontSize: "11px" }}>Corporate</span>
+                    </div>
+                    <span style={{ color: "#1E40AF", fontSize: "12px" }}>Tech Corp Office</span>
+                  </div>
+
+                  <div
+                    className="p-2.5 rounded-lg"
+                    style={{ backgroundColor: "#FCE7F3", borderLeft: "3px solid #EC4899" }}
+                  >
+                    <div className="flex items-center justify-between">
+                      <span style={{ fontWeight: 600, color: "#9D174D", fontSize: "12px" }}>
+                        2:00 PM
+                      </span>
+                      <span style={{ color: "#EC4899", fontSize: "11px" }}>Wedding</span>
+                    </div>
+                    <span style={{ color: "#9D174D", fontSize: "12px" }}>Smith Wedding</span>
+                  </div>
+
+                  <div
+                    className="p-2.5 rounded-lg"
+                    style={{ backgroundColor: "#D1FAE5", borderLeft: "3px solid #10B981" }}
+                  >
+                    <div className="flex items-center justify-between">
+                      <span style={{ fontWeight: 600, color: "#065F46", fontSize: "12px" }}>
+                        6:00 PM
+                      </span>
+                      <span style={{ color: "#10B981", fontSize: "11px" }}>Party</span>
+                    </div>
+                    <span style={{ color: "#065F46", fontSize: "12px" }}>Birthday @ Park</span>
+                  </div>
                 </div>
               </div>
 
-              <div className="space-y-2 text-center">
+              <div className="space-y-2">
                 <h3
                   className="text-[20px] tracking-tight"
                   style={{
@@ -330,19 +435,18 @@ export default function BentoGrid() {
                     color: "#0F172A",
                   }}
                 >
-                  Automations on Autopilot
+                  Multi-Event Calendar
                 </h3>
                 <p
                   className="text-[14px] leading-[1.5]"
                   style={{ color: "rgba(15,23,42,0.6)" }}
                 >
-                  Trigger automated workflows for emails, tasks, and reminders
-                  so you never drop the ball.
+                  Coffee at 7am, wedding at 2pm. See your whole day.
                 </p>
               </div>
             </div>
 
-            {/* Lead Management Card */}
+            {/* Auto Prep Lists */}
             <div
               className="rounded-3xl p-8 space-y-6"
               style={{
@@ -351,45 +455,82 @@ export default function BentoGrid() {
                 border: "1px solid rgba(0,0,0,0.06)",
               }}
             >
-              {/* Mock Lead Actions */}
+              {/* Mock Prep List */}
               <div className="space-y-3">
                 <div
                   className="text-xs px-3 py-1.5 rounded-md inline-block"
                   style={{
-                    backgroundColor: "#F1F5F9",
-                    color: "#64748B",
+                    backgroundColor: "#DBEAFE",
+                    color: "#1E40AF",
                     fontWeight: 600,
                   }}
                 >
-                  New Lead
+                  Smith Wedding - 75 guests
                 </div>
-                <div className="space-y-2 mt-4">
-                  <button
-                    className="w-full px-4 py-2.5 rounded-lg text-white text-sm flex items-center justify-center gap-2"
-                    style={{ backgroundColor: "#A855F7", fontWeight: 600 }}
-                  >
-                    <svg
-                      className="w-4 h-4"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                <div className="space-y-2 mt-3">
+                  <div className="flex items-center justify-between text-sm">
+                    <div className="flex items-center gap-2">
+                      <div
+                        className="w-4 h-4 rounded border-2 flex items-center justify-center"
+                        style={{ borderColor: "#10B981", backgroundColor: "#10B981" }}
+                      >
+                        <span className="text-white text-xs">✓</span>
+                      </div>
+                      <span style={{ color: "#0F172A" }}>Coffee beans</span>
+                    </div>
+                    <span style={{ color: "#10B981", fontWeight: 600 }}>2.5 lbs</span>
+                  </div>
+                  <div className="flex items-center justify-between text-sm">
+                    <div className="flex items-center gap-2">
+                      <div
+                        className="w-4 h-4 rounded border-2 flex items-center justify-center"
+                        style={{ borderColor: "#10B981", backgroundColor: "#10B981" }}
+                      >
+                        <span className="text-white text-xs">✓</span>
+                      </div>
+                      <span style={{ color: "#0F172A" }}>Oat milk</span>
+                    </div>
+                    <span style={{ color: "#10B981", fontWeight: 600 }}>4 cartons</span>
+                  </div>
+                  <div className="flex items-center justify-between text-sm">
+                    <div className="flex items-center gap-2">
+                      <div
+                        className="w-4 h-4 rounded border-2"
+                        style={{ borderColor: "#CBD5E1" }}
                       />
-                    </svg>
-                    Send Welcome Email
-                  </button>
-                  <div
-                    className="text-xs text-center pt-2"
-                    style={{ color: "#94A3B8", fontWeight: 600 }}
-                  >
-                    Create Task
+                      <span style={{ color: "#0F172A" }}>Cups (12oz)</span>
+                    </div>
+                    <span style={{ color: "#64748B", fontWeight: 600 }}>100 ct</span>
+                  </div>
+                  <div className="flex items-center justify-between text-sm">
+                    <div className="flex items-center gap-2">
+                      <div
+                        className="w-4 h-4 rounded border-2"
+                        style={{ borderColor: "#CBD5E1" }}
+                      />
+                      <span style={{ color: "#0F172A" }}>Napkins</span>
+                    </div>
+                    <span style={{ color: "#64748B", fontWeight: 600 }}>150 ct</span>
                   </div>
                 </div>
+              </div>
+
+              <div className="space-y-2">
+                <h3
+                  className="text-[20px] tracking-tight"
+                  style={{
+                    fontWeight: 600,
+                    color: "#0F172A",
+                  }}
+                >
+                  Auto Prep Lists
+                </h3>
+                <p
+                  className="text-[14px] leading-[1.5]"
+                  style={{ color: "rgba(15,23,42,0.6)" }}
+                >
+                  Know exactly what to pack for each event.
+                </p>
               </div>
             </div>
           </div>
@@ -405,10 +546,10 @@ export default function BentoGrid() {
                 fontSize: "16px",
               }}
             >
-              Start Your Hive →
+              Start Free →
             </button>
             <p className="text-[14px]" style={{ color: "rgba(15,23,42,0.5)" }}>
-              Join 2,000+ service businesses growing with Hively.
+              Join mobile cart vendors growing with Hively.
             </p>
           </div>
         </div>

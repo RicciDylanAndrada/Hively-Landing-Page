@@ -1,46 +1,43 @@
 export default function Pricing() {
   const plans = [
     {
-      name: "Starter",
-      price: "$29",
-      description: "For small service teams getting organized.",
+      name: "Free",
+      price: "$0",
+      description: "Get started and see if Hively is right for you.",
       features: [
-        "Up to 50 active bookings per month",
-        "Client management and lead tracking",
-        "Basic automations and reminders",
-        "Invoice generation and payment tracking",
-        "Calendar view and scheduling",
+        "Up to 5 leads per month",
+        "2 bookings per month",
+        "Basic quote builder",
+        "Client dashboard access",
         "Email support",
       ],
     },
     {
       name: "Pro",
-      price: "$79",
-      description: "For growing teams managing active workflows.",
+      price: "$29",
+      description: "Everything you need to run your mobile cart business.",
       features: [
-        "Up to 200 active bookings per month",
-        "Advanced automation workflows",
-        "Custom invoice templates",
-        "Team collaboration and permissions",
-        "Priority email and chat support",
-        "Custom reporting and exports",
-        "API access for integrations",
+        "Unlimited leads and bookings",
+        "Instagram DM inbox",
+        "Visual quote builder",
+        "Auto prep lists",
+        "Calendar sync (Google, Apple)",
+        "Priority support",
       ],
       emphasized: true,
     },
     {
       name: "Business",
-      price: "$149",
-      description: "For teams running complex operations.",
+      price: "$59",
+      description: "For vendors with multiple carts or team members.",
       features: [
-        "Unlimited bookings per month",
-        "Advanced workflow automation",
-        "White-label client portal",
-        "Multiple team workspaces",
-        "Dedicated account manager",
-        "Custom integrations and webhooks",
-        "Advanced analytics and forecasting",
-        "SLA and priority support",
+        "Everything in Pro",
+        "Multiple cart profiles",
+        "Team member accounts",
+        "Advanced analytics",
+        "Custom branding on quotes",
+        "Dedicated onboarding",
+        "API access",
       ],
     },
   ];
@@ -61,14 +58,13 @@ export default function Pricing() {
                 color: "#0F172A",
               }}
             >
-              Choose your plan.
+              Simple pricing. Start free.
             </h2>
             <p
               className="text-[20px] leading-[1.5] max-w-2xl mx-auto"
               style={{ color: "rgba(15,23,42,0.72)" }}
             >
-              All plans include full access to the Hively platform with monthly
-              billing.
+              No credit card required. Upgrade when you&apos;re ready.
             </p>
           </div>
 
@@ -169,13 +165,13 @@ export default function Pricing() {
                 <button
                   className="w-full px-6 py-3 rounded-lg transition-all hover:opacity-90"
                   style={{
-                    backgroundColor: "#E6F29A",
+                    backgroundColor: plan.emphasized ? "#E6F29A" : "#F1F5F9",
                     color: "#1a1a1a",
                     fontWeight: 600,
                     fontSize: "16px",
                   }}
                 >
-                  Start Your Hive
+                  {plan.name === "Free" ? "Start Free" : "Get Started"}
                 </button>
               </div>
             ))}
@@ -187,14 +183,13 @@ export default function Pricing() {
               className="text-[16px] leading-[1.5]"
               style={{ color: "rgba(15,23,42,0.72)" }}
             >
-              Cancel anytime with no long-term commitment required.
+              Cancel anytime. No contracts, no commitment.
             </p>
             <p
               className="text-[16px] leading-[1.5]"
               style={{ color: "rgba(15,23,42,0.72)" }}
             >
-              All plans include secure data storage and regular platform
-              updates.
+              Questions? Email us at hello@hively.com
             </p>
           </div>
         </div>
